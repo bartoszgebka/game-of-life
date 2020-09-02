@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="generation-wrapper">
+    Generation: <strong>{{ gameOfLifeService.generation }}</strong>
+  </div>
+  <table>
+    <tbody>
+      <tr *ngFor="let col of gameOfLifeService.board">
+        <td *ngFor="let row of col" [class.alive]="row.isAlive()"></td>
+      </tr>
+    </tbody>
+  </table>
+  <app-game-controls></app-game-controls>
+</div>

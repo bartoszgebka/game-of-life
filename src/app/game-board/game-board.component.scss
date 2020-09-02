@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+  tr td {
+    border: 1px solid #ddd;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.alive {
+  background-color: #0370a3;
+}
+
+.generation-wrapper {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
