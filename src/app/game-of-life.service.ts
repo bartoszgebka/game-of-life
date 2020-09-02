@@ -85,24 +85,24 @@ export class GameOfLifeService {
     this.initializeBoard();
   }
 
-  getCountLiveNeighbourds(i: number, j: number): number {
+  private getCountLiveNeighbourds(i: number, j: number): number {
     let sum = 0;
     if (this._board[i - 1]) {
-      sum += this.getLiveNeightbourd(this._board[i - 1][j]);
-      sum += this.getLiveNeightbourd(this._board[i - 1][j - 1]);
-      sum += this.getLiveNeightbourd(this._board[i - 1][j + 1]);
+      sum += this.getLiveNeighbor(this._board[i - 1][j - 1]);
+      sum += this.getLiveNeighbor(this._board[i - 1][j + 1]);
+      sum += this.getLiveNeighbor(this._board[i - 1][j]);
     }
-    sum += this.getLiveNeightbourd(this._board[i][j - 1]);
-    sum += this.getLiveNeightbourd(this._board[i][j + 1]);
+    sum += this.getLiveNeighbor(this._board[i][j - 1]);
+    sum += this.getLiveNeighbor(this._board[i][j + 1]);
     if (this.board[i + 1]) {
-      sum += this.getLiveNeightbourd(this._board[i + 1][j]);
-      sum += this.getLiveNeightbourd(this._board[i + 1][j - 1]);
-      sum += this.getLiveNeightbourd(this._board[i + 1][j + 1]);
+      sum += this.getLiveNeighbor(this._board[i + 1][j]);
+      sum += this.getLiveNeighbor(this._board[i + 1][j - 1]);
+      sum += this.getLiveNeighbor(this._board[i + 1][j + 1]);
     }
     return sum;
   }
 
-  getLiveNeightbourd(cell: Cell): number {
+  private getLiveNeighbor(cell: Cell): number {
     return cell ? (cell.isAlive() ? 1 : 0) : 0;
   }
 }
