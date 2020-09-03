@@ -83,6 +83,7 @@ export class GameOfLifeService {
   public reset(): void {
     this._board = this.make2DArray();
     this.initializeBoard();
+    this._generation = 0;
   }
 
   private getCountLiveNeighbourds(i: number, j: number): number {
