@@ -1,3 +1,5 @@
+<img width="350" alt="game of life" src="https://user-images.githubusercontent.com/20091462/96494106-2dc79f80-1246-11eb-8db9-c65081abf396.png">
+
 # GameOfLife
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
