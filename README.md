@@ -1,4 +1,4 @@
-<img width="350" alt="game of life" src="https://user-images.githubusercontent.com/20091462/96494106-2dc79f80-1246-11eb-8db9-c65081abf396.png">
+<img width="1250" alt="game-of-life" src="https://user-images.githubusercontent.com/20091462/96494312-7aab7600-1246-11eb-98f4-f14b385e301b.png">
 
 # GameOfLife
 
