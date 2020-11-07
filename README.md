@@ -1,3 +1,5 @@
+https://bartoszgebka.github.io/game-of-life/
+
 <img width="1250" alt="game-of-life" src="https://user-images.githubusercontent.com/20091462/96494312-7aab7600-1246-11eb-98f4-f14b385e301b.png">
 
 # GameOfLife
